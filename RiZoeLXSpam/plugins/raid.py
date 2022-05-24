@@ -22,7 +22,7 @@ que = {}
 @Riz9.on(events.NewMessage(pattern=r"\.raid"))
 @Riz10.on(events.NewMessage(pattern=r"\.raid"))
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
+    usage = "⚠️ Opps !!\n🆘 Help :\n@M8N_SUPPORT\n\n[][][][][][][][][][][][][][][][][][][][][]\nJoin & Ask your issue !!\n\n🛑 Updates :\n@M8N_OFFICIAL\n\n[][][][][][][][][][][][][][][][][][][][][]\n\n🌸 Owner : @Its_romeoo"
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
