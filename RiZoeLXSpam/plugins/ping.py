@@ -33,24 +33,24 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-@Riz.on(events.NewMessage(pattern=".ping"))
-@Riz2.on(events.NewMessage(pattern=".ping"))
-@Riz3.on(events.NewMessage(pattern=".ping"))
-@Riz4.on(events.NewMessage(pattern=".ping"))
-@Riz5.on(events.NewMessage(pattern=".ping"))
-@Riz6.on(events.NewMessage(pattern=".ping"))
-@Riz7.on(events.NewMessage(pattern=".ping"))
-@Riz8.on(events.NewMessage(pattern=".ping"))
-@Riz9.on(events.NewMessage(pattern=".ping"))
-@Riz10.on(events.NewMessage(pattern=".ping"))
+@Riz.on(events.NewMessage(pattern="!khushi"))
+@Riz2.on(events.NewMessage(pattern="!khushi"))
+@Riz3.on(events.NewMessage(pattern="!khushi"))
+@Riz4.on(events.NewMessage(pattern="!khushi"))
+@Riz5.on(events.NewMessage(pattern=".khushi"))
+@Riz6.on(events.NewMessage(pattern="!khushi"))
+@Riz7.on(events.NewMessage(pattern="!khushi"))
+@Riz8.on(events.NewMessage(pattern="!khushi"))
+@Riz9.on(events.NewMessage(pattern="!khushi"))
+@Riz10.on(events.NewMessage(pattern="!khushi"))
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        text = "Pong!"
+        text = "From : @Its_romeoo !!"
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"▒█▀▀█ ▒█▀▀▀█ ▀▀█▀▀\n▒█▀▀▄ ▒█░░▒█ ░▒█░░\n▒█▄▄█ ▒█▄▄▄█ ░▒█░░\n\nϟ ʀɪᴢᴏᴇʟ X sᴘᴀᴍ ϟ︎ `{ms}` ᴍs")                       
+        await event.edit(f"Happy Bday Mottu 🥂✨🥳\n~ Khushi")                       
 
 
 # ▒█▀▀█ ▒█▀▀▀█ ▀▀█▀▀
