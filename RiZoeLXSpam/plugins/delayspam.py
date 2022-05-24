@@ -34,7 +34,7 @@ from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO
 @Riz9.on(events.NewMessage(pattern=".delayspam"))
 @Riz10.on(events.NewMessage(pattern=".delayspam"))
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."     
+    usage = "⚠️ Opps !!\n🆘 Help :\n@M8N_SUPPORT\n\n[][][][][][][][][][][][][][][][][][][][][]\nJoin & Ask your issue !!\n\n🛑 Updates :\n@M8N_OFFICIAL\n\n[][][][][][][][][][][][][][][][][][][][][]\n\n🌸 Owner : @Its_romeoo"     
     if e.sender_id in SUDO_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
